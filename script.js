@@ -13,8 +13,40 @@
 // Quando un pezzo di codice funziona, chiediamoci se possiamo scomporlo in funzioni più piccole.
 // Buon lavoro!
 
-const staff = {
-    staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
-    staffName: "Wayne Barnett",
-    job: "Founder & CEO",
-};
+const staff = [
+    {
+        user: {
+            staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
+            staffName: "Wayne Barnett",
+            job: "Founder & CEO",
+        },
+
+        
+        user: {
+            staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
+            staffName: "Wayne Barnett",
+            job: "Founder & CEO",
+        },
+    }    
+];
+
+const containerStaff = document.querySelector(".team-container")
+
+for (let i = 0; i < staff.length; i++) {
+    console.log(staff[i]);
+}
+
+
+
+{/* <div class="team-card">
+    <div class="card-image">
+        <img
+        src="img/wayne-barnett-founder-ceo.jpg"
+        alt="Wayne Barnett"
+        />
+    </div>
+    <div class="card-text">
+        <h3>Wayne Barnett</h3>
+        <p>Founder & CEO</p>
+    </div>
+</div> */}
