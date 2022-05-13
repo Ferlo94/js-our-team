@@ -12,3 +12,9 @@
 // console.log() è nostro amico.
 // Quando un pezzo di codice funziona, chiediamoci se possiamo scomporlo in funzioni più piccole.
 // Buon lavoro!
+
+const staff = {
+    staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
+    staffName: "Wayne Barnett",
+    job: "Founder & CEO",
+};
