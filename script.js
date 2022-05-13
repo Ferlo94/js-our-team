@@ -15,22 +15,44 @@
 
 const staff = [
     {
-        user: {
-            staffPic: "img/wayne-barnett-founder-ceo.jpg",
-            staffName: "Wayne Barnett",
-            job: "Founder & CEO",
-        },
+        staffPic: "img/wayne-barnett-founder-ceo.jpg",
+        staffName: "Wayne Barnett",
+        job: "Founder & CEO",
+    },
 
-        
-        user: {
-            staffPic: "img/angela-caroll-chief-editor.jpg",
-            staffName: "Angela Caroll",
-            job: "Chief Editor",
-        },
-    }    
+    {
+        staffPic: "img/angela-caroll-chief-editor.jpg",
+        staffName: "Angela Caroll",
+        job: "Chief Editor",
+    },
+
+    {
+        staffPic: "img/walter-gordon-office-manager.jpg",
+        staffName: "Walter Gordon",
+        job: "Office Manager",
+    },
+
+    {
+        staffPic: "img/angela-lopez-social-media-manager.jpg",
+        staffName: "Angela Lopez",
+        job: "Social Media Manager",
+    },
+
+    {
+        staffPic: "img/scott-estrada-developer.jpg",
+        staffName: "Scott Estrada",
+        job: "Developer",
+    },
+
+    {
+        staffPic: "img/barbara-ramos-graphic-designer.jpg",
+        staffName: "Barbara Ramos",
+        job: "Graphic Designer",
+    },
+       
 ];
 
-const containerStaff = document.querySelector(".team-container")
+const containerStaff = document.querySelector(".team-container");
 
 for (let i = 0; i < staff.length; i++) {
     console.log(staff[i]);
@@ -40,13 +62,13 @@ for (let i = 0; i < staff.length; i++) {
     <div class="team-card">
         <div class="card-image">
             <img
-            src="${staff[i].user.staffPic}"
+            src="${staff[i].staffPic}"
             alt="Wayne Barnett"
             />
         </div>
         <div class="card-text">
-            <h3>${staff[i].user.staffName}</h3>
-            <p>${staff[i].user.job}</p>
+            <h3>${staff[i].staffName}</h3>
+            <p>${staff[i].job}</p>
         </div>
     </div> 
 `;
