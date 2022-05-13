@@ -16,16 +16,16 @@
 const staff = [
     {
         user: {
-            staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
+            staffPic: "img/wayne-barnett-founder-ceo.jpg",
             staffName: "Wayne Barnett",
             job: "Founder & CEO",
         },
 
         
         user: {
-            staffPic: "src=img/wayne-barnett-founder-ceo.jpg",
-            staffName: "Wayne Barnett",
-            job: "Founder & CEO",
+            staffPic: "img/angela-caroll-chief-editor.jpg",
+            staffName: "Angela Caroll",
+            job: "Chief Editor",
         },
     }    
 ];
@@ -34,19 +34,21 @@ const containerStaff = document.querySelector(".team-container")
 
 for (let i = 0; i < staff.length; i++) {
     console.log(staff[i]);
+
+    const team = `
+
+    <div class="team-card">
+        <div class="card-image">
+            <img
+            src="${staff[i].user.staffPic}"
+            alt="Wayne Barnett"
+            />
+        </div>
+        <div class="card-text">
+            <h3>${staff[i].user.staffName}</h3>
+            <p>${staff[i].user.job}</p>
+        </div>
+    </div> 
+`;
+containerStaff.innerHTML += team;
 }
-
-
-
-{/* <div class="team-card">
-    <div class="card-image">
-        <img
-        src="img/wayne-barnett-founder-ceo.jpg"
-        alt="Wayne Barnett"
-        />
-    </div>
-    <div class="card-text">
-        <h3>Wayne Barnett</h3>
-        <p>Founder & CEO</p>
-    </div>
-</div> */}
